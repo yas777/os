@@ -1,0 +1,10 @@
+-> state of child process while waiting for input is S+
+-> State of child process after displaying the messages is Z+
+
+S -> interruptible sleep (waiting for an event to complete)
+Z -> defunct ("zombie") process, terminated but not reaped by its parent 
++ -> is in the foreground process group
+
+-> In first case the process is wating for a keyboard input so its state is S(waiting for an event to complete)+ and in second case the process is a zombie. So, its state is Z+. 
+
+Ref :- q6.png

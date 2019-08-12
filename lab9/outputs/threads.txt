@@ -1,0 +1,11 @@
+labuser@sl2-56:~/Downloads/lab9/test-programs$ gcc threads.c -lpthread
+labuser@sl2-56:~/Downloads/lab9/test-programs$ ./a.out 
+Counter: 100000 
+labuser@sl2-56:~/Downloads/lab9/test-programs$ ./a.out 
+Counter: 100000 
+labuser@sl2-56:~/Downloads/lab9/test-programs$ ./a.out 
+Counter: 100000 
+labuser@sl2-56:~/Downloads/lab9/test-programs$ ./a.out 
+Counter: 100000 
+labuser@sl2-56:~/Downloads/lab9/test-programs$ 
+

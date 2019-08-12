@@ -1,0 +1,79 @@
+a) 
+Sockets - 1
+cores - 4
+CPUS - 4
+Ref - q1.png
+b)
+frequencies of each cpu in order
+1845.000,1752.656,1934.765,1941.328
+Ref - q2_1.png,q2_2.png
+
+c)
+Total Memory - 8140356  kB
+Ref - q3.png
+
+d)
+Free Memory - 2601476 kB
+Vailable Memory - 4388032 kB
+
+Free Memory - The amount of physical RAM, in kilobytes, left unused by the system.
+Available Memory - An estimate of how much memory is available for starting new applications, without swapping.
+
+Ref - q3.png
+
+e)
+Total number of user-level processes - 52206
+-> process value in /proc/stat
+Ref - q4.png
+
+f)
+Context Switches - 56692715
+-> ctxt value in /proc/stat
+
+Ref - q4.png
+
+e) Every file has zero size as they are not real files they read dynamically when the terminal calls and prints in areadabkle manner
+
+
+2)
+	Memory1.c 
+		VmSize :- 8136 kB
+		VmRss  :- 636 kB 
+	Memory2.c
+		VmSize :- 12044 kB
+		VmRss  :-  640 kB
+	Memory3.c 
+		VmSize :- 8140 kB
+		VmRss  :-  3116 kB
+	Memory4.c
+		VmSize :- 8144 kB
+		VmRss  :-  4956 kB
+
+
+-> Menory2 is demanding double the space (#define ARRAY_SIZE 2000000) when compared to other three codes.So, its Vmsize is more than others
+-> The functinal part of Memory1 and Memory2 is same. so the Vmrss is same for those 2.
+-> Memory3 and Memory4 has extra for loop where no.of iterations are in mem4 than mem3. So, memopry4 Vrss is more than memory3 Vrss
+
+3) 21 -> BY listing all the process with subprocess(process-name) with command "ps -u labuser | grep subprocess |wc -l"
+
+4) 
+a) As the hello program has functionality like printing pid and entered name whereas the empty program has no functionality. So preloading part is same for both functions, difference occures when the functionality part hello.c starts.
+	b) execve, access, open, fstat, mmap, close(same for both hello and empty), read and write (only in hello)\
+
+ oute ->empty stderrs
+ outh ->hello stderr
+
+5) 
+No.of files opened = 12
+-> By finding the process id by "ps -u labuser | grep openfiles"
+-> No.of open files = lsof -p pid | wc -l
+
+6)
+NAME   FSTYPE Mountpoint
+sda                                                      
+|-sda1 ext4   /
+|-sda2                                                   
+`-sda5 swap   [SWAP]
+
+-> By running lsblk -f command
+

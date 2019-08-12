@@ -1,0 +1,7 @@
+a) acquire and release are the functions for acquiring and releasing the lock.
+b) holding function is to know whether the particular cpu is holding the lock.
+c) if a process calls a acquire lock which is already acquired by the same process the panic of acquires occcurs.Simply if we write acquire after acquire without a release the panic of acquire.
+d)  xchg - It keeps the newval in the given address and returns the old value in the address and it is implemented as a atomic instruction so that both test and set instructions exectued as a single instruction.
+	pushcli - Disables the interrupts and increments the ncli variable to keep track of number of locks that a particular process is running.
+	popcli - Decrements the ncli and when ncli == 0(all locks are released) it enables the interrupts.
+e)  if we enable the interrupts after acquiring the lock then if a interrupt which uses the already acquired lock comes then kernel immediately switches to handle that interrupt whose leads to deadlock situtation.

@@ -1,0 +1,81 @@
+
+2) ------cmd------
+
+turtle$ cmd ls
+.              1 1 512
+..             1 1 512
+README         2 2 2290
+cat            2 3 13432
+cmd            2 4 12892
+helloxv6       2 5 12244
+my_siblings    2 6 13748
+head           2 7 13556
+echo           2 8 12512
+forktest       2 9 8220
+grep           2 10 15260
+init           2 11 13100
+kill           2 12 12552
+ln             2 13 12460
+ls             2 14 14676
+mkdir          2 15 12576
+rm             2 16 12552
+sh             2 17 23200
+stressfs       2 18 13232
+usertests      2 19 56112
+wc             2 20 14088
+zombie         2 21 12284
+console        3 22 0
+turtle$ cmd echo hello
+hello
+turtle$ cmd ls | grep c
+cat            2 3 13432
+cmd            2 4 12892
+echo           2 8 12512
+wc             2 20 14088
+console        3 22 0
+
+-----------head--------------
+
+turtle$ head 5 abc.txt
+--- abc.txt ---
+abc
+def
+ghi
+jkl
+mno
+turtle$ head 5 hello.txt
+--- hello.txt ---
+hello
+world
+turtle$ head 4 abc.txt hello.txt
+--- abc.txt ---
+abc
+def
+ghi
+jkl
+--- hello.txt ---
+hello
+world
+
+
+3) ------helloxv6-------
+
+turtle$ helloxv6
+Hi! Welcome to the world of xv6!
+
+------my_siblings--------
+turtle$ my_siblings 6 1 2 1 0 2 0
+20  RUNNING
+21  ZOMBIE
+22  RUNNABLE
+23  SLEEPING
+24  ZOMBIE
+25  SLEEPING
+
+turtle$ my_siblings 6 1 1 2 2 0 0
+28  RUNNING
+29  RUNNABLE
+30  ZOMBIE
+31  ZOMBIE
+32  SLEEPING
+33  SLEEPING

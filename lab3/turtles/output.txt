@@ -1,0 +1,88 @@
+Hello>mkdir test
+Got command mkdir test
+
+Hello>ls
+Got command ls
+a.out  dsfa.txt  hello.txt  p1a.c  p1b.c  p1c.c  p1c.txt  test	turtles.c
+
+Hello>cd test
+Got command cd test
+Entered directory test
+
+Hello>pwd
+Got command pwd
+/home/yaswanth/Documents/160050066_lab3/test
+
+Hello>cd ..
+Got command cd ..
+Entered directory ..
+
+Hello>pwd
+Got command pwd
+/home/yaswanth/Documents/160050066_lab3
+
+Hello>cd
+Got command cd
+Wrong number of arguments
+
+Hello>rm test
+Got command rm test
+rm: cannot remove 'test': Is a directory
+
+Hello>rmdir test
+Got command rmdir test
+
+Hello>ls
+Got command ls
+a.out  dsfa.txt  hello.txt  p1a.c  p1b.c  p1c.c  p1c.txt  turtles.c
+
+Hello>sleep 5
+Got command sleep 5
+
+Hello>echo "Hello"
+Got command echo "Hello"
+"Hello"
+
+Hello>echo "Hello" > hello.txt
+Got command echo "Hello" > hello.txt
+Hello>chmod 777 hello.txt
+Got command chmod 777 hello.txt
+
+Hello>ls
+Got command ls
+a.out  dsfa.txt  hello.txt  p1a.c  p1b.c  p1c.c  p1c.txt  turtles.c
+
+Hello>cat hello.txt
+Got command cat hello.txt
+"Hello"
+
+Hello>cd hello.txt
+Got command cd hello.txt
+Error: Not a directory
+
+Hello>cat hi.txt 
+Got command cat hi.txt
+cat: hi.txt: No such file or directory
+
+Hello>sleep 5 ;; cat hello.txt ;; sleep 1 ;; echo "hi" ;; ls
+Got command sleep 5 ;; cat hello.txt ;; sleep 1 ;; echo "hi" ;; ls
+"Hello"
+"hi"
+a.out  dsfa.txt  hello.txt  p1a.c  p1b.c  p1c.c  p1c.txt  turtles.c
+
+Hello>cat hi.txt ;; echo "You know nothing Jon Snow"
+Got command cat hi.txt ;; echo "You know nothing Jon Snow"
+cat: hi.txt: No such file or directory
+"You know nothing Jon Snow"
+
+Hello>cd .
+Got command cd .
+Entered directory .
+
+Hello>cd ..
+Got command cd ..
+Entered directory ..
+
+Hello>cd AEF
+Got command cd AEF
+Error: No such file or directory
